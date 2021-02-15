@@ -32,18 +32,19 @@ for ($i = 0; $i < count($all_files); $i++) {
             $percentHeight = $percentWidth / 100 * $resizeHeight;
             $newHeight = $resizeHeight - $percentHeight;
             $roundHeight = round($newHeight);
-            echo "------------------------------------------------------------- \n";
-            echo "+/-" . gmp_sign("$roundHeight") . "\n";
-            echo "------------------------------------------------------------- \n";
-            echo " width > 1024 \n";
-            echo "------------------------------------------------------------- \n";
-            echo "Initial width: \n", $resizeWidth , " ";
-            echo "Initial height: \n", $resizeHeight, " ";
-            echo "Width - Our constant width: \n", $SubWith , " ";
-            echo "Percentage of width: \n", $percentWidth, " ";
-            echo "Percentage of heght: \n", $percentHeight, " ";
-            echo "Length - percentage of original length: \n", $roundHeight, " ";
-            echo "------------------------------------------------------------- \n";
+            //Это просто для наглядности, если хотите просмотреть расчеты можно раскомментить
+//             echo "------------------------------------------------------------- \n";
+//             echo "+/-" . gmp_sign("$roundHeight") . "\n";
+//             echo "------------------------------------------------------------- \n";
+//             echo " width > 1024 \n";
+//             echo "------------------------------------------------------------- \n";
+//             echo "Initial width: \n", $resizeWidth , " ";
+//             echo "Initial height: \n", $resizeHeight, " ";
+//             echo "Width - Our constant width: \n", $SubWith , " ";
+//             echo "Percentage of width: \n", $percentWidth, " ";
+//             echo "Percentage of heght: \n", $percentHeight, " ";
+//             echo "Length - percentage of original length: \n", $roundHeight, " ";
+//             echo "------------------------------------------------------------- \n";
             if (in_array($ext, $supported_format)) {
 
                 try {
@@ -70,18 +71,18 @@ for ($i = 0; $i < count($all_files); $i++) {
             $percentHeight = $percentWidth / 100 * $resizeHeight;
             $newHeight = $resizeHeight - $percentHeight;
             $roundHeight = round($newHeight);
-            echo "------------------------------------------------------------- \n";
-            echo "+/-" . gmp_sign("$roundHeight") . "\n";
-            echo "------------------------------------------------------------- \n";
-            echo " width > 1024 \n";
-            echo "------------------------------------------------------------- \n";
-            echo "Initial width: ", $resizeWidth , "\n ";
-            echo "Initial height: ", $resizeHeight, "\n ";
-            echo "Width - Our constant width:", $SubWith , "\n ";
-            echo "Percentage of width: ", $percentWidth, "\n ";
-            echo "Percentage of heght: ", $percentHeight, "\n ";
-            echo "Length - percentage of original length: ", $roundHeight, "\n ";
-            echo "------------------------------------------------------------- \n";
+//             echo "------------------------------------------------------------- \n";
+//             echo "+/-" . gmp_sign("$roundHeight") . "\n";
+//             echo "------------------------------------------------------------- \n";
+//             echo " width > 1024 \n";
+//             echo "------------------------------------------------------------- \n";
+//             echo "Initial width: ", $resizeWidth , "\n ";
+//             echo "Initial height: ", $resizeHeight, "\n ";
+//             echo "Width - Our constant width:", $SubWith , "\n ";
+//             echo "Percentage of width: ", $percentWidth, "\n ";
+//             echo "Percentage of heght: ", $percentHeight, "\n ";
+//             echo "Length - percentage of original length: ", $roundHeight, "\n ";
+//             echo "------------------------------------------------------------- \n";
             if (in_array($ext, $supported_format)) {
 
                 try {
